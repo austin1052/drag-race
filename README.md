@@ -18,6 +18,32 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+
+## Git Processes
+
+### Building a new branch
+```bash
+    # Switch to main to get the latest changes from other people
+    git checkout main
+    git pull
+    git checkout -b "NEW_BRANCH_NAME"
+```
+### Committing your changes to this branch
+```bash
+    # Stage your changes (include them in your next commit)
+    # . represents the current folder
+    git add .
+    git commit -m "Explaination of the changes you made in past tense"
+    # eg. git commit -m "added the first schema to the database"
+    git push -u origin YOUR_BRANCH_NAME
+    # eg. git push -u origin standings-page
+    # if branch already exists on origin instead write
+    git push
+```
+
+### Submitting PR
+On github, go to the branch that you would like to merge to main. Click 
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
